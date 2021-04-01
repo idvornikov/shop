@@ -1,9 +1,16 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
   font-family: "Lato", sans-serif;
-  margin: 0;
 }
 
 footer {
@@ -32,23 +39,55 @@ p {
   justify-content: space-between;
 }
 
-.button {
-  text-align: center;
+.arrivals {
+  background: #F8F3F4;
 }
-.button__link {
+.arrivals__body {
+  align-items: center;
+  display: flex;
+  height: 148px;
+  justify-content: space-between;
+}
+.arrivals__header {
   color: #F16D7F;
-  text-decoration: none;
-  border: 1px #F16D7F solid;
-  padding: 14px 39px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.breadcrumbs {
+  color: #636363;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+}
+.breadcrumbs__item {
+  display: inline;
+}
+.breadcrumbs__item::after {
+  padding: 3px;
+  color: black;
+  content: "/ ";
+}
+.breadcrumbs__item--active {
+  color: #F16D7F;
+  font-weight: bold;
+}
+.breadcrumbs__item--active::after {
+  padding: 3px;
+  content: none;
 }
 
 .card {
   background: #F8F8F8;
   height: 580px;
   width: 360px;
+  flex: 0 0 31%;
 }
 .card__img {
   margin-bottom: 25px;
+}
+.card--margin-bottom {
+  margin-bottom: 30px;
 }
 .card__price {
   color: #F16D7F;
@@ -73,10 +112,10 @@ p {
   margin-bottom: 18px;
 }
 
-.categories {
+.items {
   margin-bottom: 96px;
 }
-.categories__top {
+.items__top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -92,7 +131,9 @@ p {
   border: none;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding: 10px 18px;
+  color: #222224;
+  opacity: 0.67;
+  padding: 15px 18px;
   font-size: 14px;
   line-height: 17px;
 }
@@ -104,7 +145,7 @@ p {
   color: white;
   font-size: 14px;
   line-height: 17px;
-  padding: 10px 18px;
+  padding: 15px 18px;
   text-decoration: none;
 }
 
@@ -131,19 +172,28 @@ p {
 .featured-items {
   margin-bottom: 95px;
 }
-.featured-items__paragraph {
+.featured-items__button {
   text-align: center;
 }
-.featured-items__title {
-  color: #222222;
-  font-size: 30px;
-  line-height: 36px;
+.featured-items__link {
+  color: #F16D7F;
+  text-decoration: none;
+  border: 1px #F16D7F solid;
+  padding: 14px 39px;
+}
+.featured-items__paragraph {
+  text-align: center;
 }
 .featured-items__subtitle {
   color: #9F9F9F;
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 47px;
+}
+.featured-items__title {
+  color: #222222;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .feedback {
@@ -169,6 +219,16 @@ p {
 .feedback__right-side {
   width: 100%;
   padding: 150px 0 150px 117px;
+}
+
+.filters__body {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 132px;
+}
+.filters__column {
+  flex: 0 0 32%;
 }
 
 .footer-wrap {
@@ -207,6 +267,7 @@ p {
 .greeting__info {
   font-size: 20px;
   line-height: 24px;
+  font-style: italic;
 }
 
 .header-wrap {
@@ -245,33 +306,56 @@ p {
 }
 .item__title-top {
   color: white;
-  font-size: 11px;
+  font-size: 16px;
+  line-height: 19px;
 }
 .item__title-bottom {
   color: #F16D7F;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: bold;
+  line-height: 19px;
 }
 .item--center {
   justify-content: center;
   align-items: center;
 }
 
-.products {
-  margin-bottom: 48px;
-}
-.products__row {
+.products__cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.products__row--margin-bottom {
-  margin-bottom: 30px;
+.products__pagination {
+  display: flex;
+  justify-content: center;
+  padding: 48px 0 96px 0;
+}
+
+.paginator {
+  border: 1px solid #EBEBEB;
+}
+.paginator__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+}
+.paginator__btn-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .promo {
   background-color: #F1E4E6;
+}
+.promo__brand {
+  font-weight: 900;
+  font-size: 48px;
+}
+.promo__luxurious {
+  font-size: 32px;
 }
 .promo__left {
   width: 50%;
@@ -304,6 +388,14 @@ p {
 }
 .promo--margin-bottom {
   margin-bottom: 65px;
+}
+
+.sort {
+  color: #6F6E6E;
+  display: flex;
+}
+.sort__item {
+  margin-right: 28px;
 }
 
 .subscribe {
