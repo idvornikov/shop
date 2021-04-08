@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Product</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
           rel="stylesheet">
@@ -40,93 +40,46 @@
         </div>
     </div>
 
-    <div class="filters">
-        <div class="filters__body wrap">
-            <div class="filter filters__column">FILTER <img src="img/filter/filter.svg" alt="filter"></div>
-            <div class="sort filters__column">
-                <details class="sort__item">
-                    <summary>TRENDING NOW <img src="img/sort/arrow-down.svg" alt="arrow"></summary>
-                </details>
-                <details class="sort__item">
-                    <summary>SIZE <img src="img/sort/arrow-down.svg" alt="arrow"></summary>
-                </details>
-                <details class="sort__item">
-                    <summary>PRICE <img src="img/sort/arrow-down.svg" alt="arrow"></summary>
-                </details>
-            </div>
-            <div class="filters__column"></div>
+    <div class="slider">
+        <div class="wrap slider__container">
+            <div class="slider__photo"><img src="img/slider/model.png" alt="photo"></div>
         </div>
     </div>
+
+    <section class="product-card">
+        <div class="product-card__container wrap">
+            <div class="product-card__info">
+                <h2 class="product-card__category">WOMEN COLLECTION</h2>
+                <hr class="product-card__line">
+                <h2 class="product-card__title">MOSCHINO CHEAP AND CHIC</h2>
+                <p class="product-card__description">Compellingly actualize fully researched processes before proactive
+                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                    Completely visualize parallel core competencies rather than exceptional portals. </p>
+                <p class="product-card__price">$561</p>
+            </div>
+            <div class="product-card__filters">
+                <div class="sort sort--margin-bottom">
+                    <details class="sort__item">
+                        <summary>CHOOSE COLOR <img src="img/sort/arrow-down.svg" alt="arrow"></summary>
+                    </details>
+                    <details class="sort__item">
+                        <summary>CHOOSE SIZE <img src="img/sort/arrow-down.svg" alt="arrow"></summary>
+                    </details>
+                    <details class="sort__item">
+                        <summary>QUANTITY <img src="img/sort/arrow-down.svg" alt="arrow"></summary>
+                    </details>
+                </div>
+            </div>
+            <div class="product-card__add-btn">
+                <img src="img/product-card/basket.png" alt="basket" class="product-card__basket">
+                <a href="#" class="product-card__link">Add to Cart</a>
+            </div>
+        </div>
+    </section>
 
     <section class="featured-items">
         <div class="products wrap">
             <div class="products__cards">
-                <div class="card card--margin-bottom">
-                    <div class="card__img"><img src="img/card/card-one.png" alt="card one"></div>
-                    <div class="card__text">
-                        <p class="card__title">ELLERY X M'O CAPSULE</p>
-                        <p class="card__subtitle">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <p class="card__price">$52.00</p>
-                    </div>
-                </div>
-                <div class="card card--margin-bottom">
-                    <div class="card__img"><img src="img/card/card-two.png" alt="card two"></div>
-                    <div class="card__text">
-                        <p class="card__title">ELLERY X M'O CAPSULE</p>
-                        <p class="card__subtitle">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <p class="card__price">$52.00</p>
-                    </div>
-                </div>
-                <div class="card card--margin-bottom">
-                    <div class="card__img"><img src="img/card/card-three.png" alt="card three"></div>
-                    <div class="card__text">
-                        <p class="card__title">ELLERY X M'O CAPSULE</p>
-                        <p class="card__subtitle">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <p class="card__price">$52.00</p>
-                    </div>
-                </div>
-                <div class="card card--margin-bottom">
-                    <div class="card__img"><img src="img/card/card-four.png" alt="card four"></div>
-                    <div class="card__text">
-                        <p class="card__title">ELLERY X M'O CAPSULE</p>
-                        <p class="card__subtitle">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <p class="card__price">$52.00</p>
-                    </div>
-                </div>
-                <div class="card card--margin-bottom">
-                    <div class="card__img"><img src="img/card/card-five.png" alt="card five"></div>
-                    <div class="card__text">
-                        <p class="card__title">ELLERY X M'O CAPSULE</p>
-                        <p class="card__subtitle">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <p class="card__price">$52.00</p>
-                    </div>
-                </div>
-                <div class="card card--margin-bottom">
-                    <div class="card__img"><img src="img/card/card-six.png" alt="card six"></div>
-                    <div class="card__text">
-                        <p class="card__title">ELLERY X M'O CAPSULE</p>
-                        <p class="card__subtitle">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <p class="card__price">$52.00</p>
-                    </div>
-                </div>
                 <div class="card">
                     <div class="card__img"><img src="img/card/card-four.png" alt="card four"></div>
                     <div class="card__text">
@@ -162,20 +115,6 @@
                 </div>
             </div>
 
-            <div class="products__pagination">
-                <div class="paginator">
-                    <div class="paginator__btn-block">
-                        <div class="paginator__btn"><img src="img/pagination/arrow-left.svg" alt="arrow-left"></div>
-                        <div class="paginator__btn">1</div>
-                        <div class="paginator__btn">2</div>
-                        <div class="paginator__btn">3</div>
-                        <div class="paginator__btn">4</div>
-                        <div class="paginator__btn">5</div>
-                        <div class="paginator__btn">6</div>
-                        <div class="paginator__btn"><img src="img/pagination/arrow-right.svg" alt="arrow-right"></div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
