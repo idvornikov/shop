@@ -1,0 +1,58 @@
+.categories {
+  margin-bottom: 96px;
+
+  &__card {
+    align-items: center;
+    background: rgba(33, 22, 22, 0.7);
+    display: flex;
+    height: 260px;
+    justify-content: center;
+    width: 360px;
+  }
+
+  &__bottom-card {
+    background-image: url(../img/categories/accesories.png);
+    height: 180px;
+    min-width: 100%;
+  }
+
+  &__first-card {
+    background-image: url(../img/categories/women.png);
+  }
+
+  &__second-card {
+    background-image: url(../img/categories/men.png);
+  }
+
+  &__third-card {
+    background-image: url(../img/categories/child.png);
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__title-top {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  &__title-bottom {
+    color: $pink;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+}

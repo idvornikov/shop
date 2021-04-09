@@ -1,0 +1,17 @@
+.paginator {
+  border: 1px solid #EBEBEB;
+
+  &__btn {
+    color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+  }
+
+  &__btn-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

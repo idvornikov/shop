@@ -1,0 +1,9 @@
+.slider {
+  background-color: #F7F7F7;
+
+  &__container {
+    display: flex;
+    height: 777px;
+    justify-content: center;
+  }
+}

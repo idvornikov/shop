@@ -1,0 +1,48 @@
+.arrivals {
+  background: #F8F3F4;
+
+  &__body {
+    align-items: center;
+    display: flex;
+    height: 148px;
+    justify-content: space-between;
+  }
+
+  &__breadcrumbs {
+    color: #636363;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+
+  &__header {
+    color: $pink;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__item {
+    display: inline;
+  }
+
+  &__item::after {
+    padding: 3px;
+    color: black;
+    content: "/\00a0";
+  }
+
+  &__item--active {
+    color: $pink;
+    font-weight: 700;
+  }
+
+  &__item--active::after {
+    content: none;
+    padding: 3px;
+  }
+
+  &--shadow {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
