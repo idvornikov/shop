@@ -1,0 +1,30 @@
+.products {
+  &__button {
+    padding: 14px 39px;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  &__link {
+    color: $pink;
+    border: 1px solid $pink;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 14px 39px;
+    line-height: 19px;
+    text-decoration: none;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  }
+}

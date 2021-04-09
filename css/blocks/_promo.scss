@@ -1,0 +1,56 @@
+.promo {
+  background-color: #F1E4E6;
+
+  &__body {
+    background-image: url(../img/promo/promo-bg.png);
+    background-repeat: no-repeat;
+    background-position: -226px bottom;
+    display: flex;
+    height: 764px;
+  }
+
+  &__brand {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 57.6px;
+  }
+
+  &__luxurious {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.4px;
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__right {
+    width: 50%;
+  }
+
+  &__title {
+    border-left: 15px solid $pink;
+    margin: 289px 0 0 64px;
+    padding-left: 16px;
+  }
+
+  &__title-top {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__title-bottom {
+    font-size: 22px;
+  }
+
+  &__title--pink {
+    color: $pink;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 65px;
+  }
+}

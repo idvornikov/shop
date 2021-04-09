@@ -1,0 +1,89 @@
+.feedback {
+  background: url("../img/feedback/photo.png") no-repeat center;
+  background-size: 100% 100%;
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    height: 448px;
+    justify-content: space-between;
+  }
+
+  &__button {
+    background: $pink;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px 18px;
+  }
+
+  &__face {
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__info {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__input {
+    background: #E1E1E1;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #222224;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    opacity: 0.67;
+    padding: 15px 18px;
+  }
+
+  &__left-side {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 126px;
+    padding-top: 97px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__right-side {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 0 150px 117px;
+    width: 100%;
+  }
+
+  &__subtitle {
+    color: #222224;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    color: #222224;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}

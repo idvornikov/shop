@@ -1,0 +1,12 @@
+.filters {
+  &__body {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 132px;
+  }
+
+  &__column {
+    flex: 0 0 32%;
+  }
+}

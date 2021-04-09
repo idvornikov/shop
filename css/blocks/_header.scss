@@ -1,0 +1,14 @@
+.header {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link--margined {
+    margin: 0 33px;
+  }
+
+  &__logo {
+    margin-right: 41px;
+  }
+}

@@ -1,0 +1,16 @@
+.sort {
+  color: #6F6E6E;
+  display: flex;
+
+  &__item {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    margin-right: 28px;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 48px;
+  }
+}

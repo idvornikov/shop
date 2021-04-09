@@ -37,100 +37,73 @@
 </header>
 
 <main>
-    <div class="arrivals arrivals--shadow">
+    <div class="arrivals">
         <div class="container">
             <div class="arrivals__body">
-                <h1 class="arrivals__header">NEW ARRIVALS</h1>
-                <ul class="arrivals__breadcrumbs">
-                    <li class="arrivals__item">HOME</li>
-                    <li class="arrivals__item">MEN</li>
-                    <li class="arrivals__item arrivals__item--active">NEW ARRIVALS</li>
-                </ul>
+                <h1 class="arrivals__header">SHOPPING CART</h1>
             </div>
         </div>
     </div>
 
-    <div class="slider">
-        <div class="container slider__container">
-            <div class="slider__photo"><img src="img/slider/model.png" alt="photo"></div>
-        </div>
-    </div>
-
-    <section class="product-card">
+    <div class="cart">
         <div class="container">
-            <div class="product-card__body">
-                <div class="product-card__info">
-                    <h2 class="product-card__category">WOMEN COLLECTION</h2>
-                    <hr class="product-card__line">
-                    <h2 class="product-card__title">MOSCHINO CHEAP AND CHIC</h2>
-                    <p class="product-card__description">Compellingly actualize fully researched processes before
-                        proactive
-                        outsourcing. <br>Progressively syndicate collaborative architectures before cutting-edge
-                        services.
-                        Completely <br>visualize parallel core competencies rather than exceptional portals. </p>
-                    <p class="product-card__price">$561</p>
-                </div>
-                <div class="product-card__filters">
-                    <div class="sort sort--margin-bottom">
-                        <details class="sort__item">
-                            <summary>CHOOSE COLOR <img src="img/sort/arrow-down.svg" alt="arrow"></summary>
-                        </details>
-                        <details class="sort__item">
-                            <summary>CHOOSE SIZE <img src="img/sort/arrow-down.svg" alt="arrow"></summary>
-                        </details>
-                        <details class="sort__item">
-                            <summary>QUANTITY <img src="img/sort/arrow-down.svg" alt="arrow"></summary>
-                        </details>
+            <div class="cart__body">
+                <div class="cart__purchases">
+                    <div class="cart__item cart--margined-bottom">
+                        <div class="cart__img"><img src="img/cart/1.png" alt="model"></div>
+                        <div class="cart__description">
+                            <div class="cart__specification">
+                                <h3 class="cart__title">MANGO PEOPLE <br>T-SHIRT</h3>
+                                <p class="cart__row">Price: <span class="cart__colored">$300</span></p>
+                                <p class="cart__row">Color: Red</p>
+                                <p class="cart__row">Size: Xl</p>
+                                <label>Quantity:
+                                    <input class="cart__input" type="text">
+                                </label>
+                            </div>
+                            <div class="cart__cross"><img src="img/cart/cross.svg" alt="cross"></div>
+                        </div>
+                    </div>
+                    <div class="cart__item cart--item-last">
+                        <div class="cart__img"><img src="img/cart/2.png" alt="model"></div>
+                        <div class="cart__description">
+                            <div class="cart__specification">
+                                <h3 class="cart__title">MANGO PEOPLE <br>T-SHIRT</h3>
+                                <p class="cart__row">Price: <span class="cart__colored">$300</span></p>
+                                <p class="cart__row">Color: Red</p>
+                                <p class="cart__row">Size: Xl</p>
+                                <label>Quantity:
+                                    <input class="cart__input" type="text">
+                                </label>
+                            </div>
+                            <div class="cart__cross"><img src="img/cart/cross.svg" alt="cross"></div>
+                        </div>
+                    </div>
+                    <div class="cart__buttons">
+                        <div class="cart__btn">CLEAR SHOPPING CART</div>
+                        <div class="cart__btn">CONTINUE SHOPPING</div>
                     </div>
                 </div>
-                <div class="product-card__add-btn">
-                    <img src="img/product-card/basket.png" alt="basket" class="product-card__basket">
-                    <a href="#" class="product-card__link">Add to Cart</a>
+                <div class="cart__right-side">
+                    <form action="#" class="cart__form">
+                        <h2 class="cart__form-title">SHIPPING ADDRESS</h2>
+                        <input class="cart__form-input cart__country" type="text" placeholder="Bangladesh">
+                        <input class="cart__form-input" type="text" placeholder="State">
+                        <input class="cart__form-input" type="text" placeholder="Postcode / Zip">
+                        <button class="cart__btn-quote">GET A QUOTE</button>
+                    </form>
+                    <div class="cart__checkout">
+                        <p class="cart__checkout-title">SUB TOTAL $900</p>
+                        <p class="cart__checkout-subtitle">GRAND TOTAL
+                            <span class="cart__checkout-subtitle--colored">$900</span>
+                        </p>
+                        <hr class="cart__checkout-hr">
+                        <a class="cart__btn-checkout" href="#">PROCEED TO CHECKOUT</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="featured-items">
-        <div class="products container">
-            <div class="products__cards">
-                <div class="card">
-                    <div class="card__img"><img src="img/card/card-four.png" alt="card four"></div>
-                    <div class="card__text">
-                        <p class="card__title">ELLERY X M'O CAPSULE</p>
-                        <p class="card__subtitle">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <p class="card__price">$52.00</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__img"><img src="img/card/card-five.png" alt="card five"></div>
-                    <div class="card__text">
-                        <p class="card__title">ELLERY X M'O CAPSULE</p>
-                        <p class="card__subtitle">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <p class="card__price">$52.00</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__img"><img src="img/card/card-six.png" alt="card six"></div>
-                    <div class="card__text">
-                        <p class="card__title">ELLERY X M'O CAPSULE</p>
-                        <p class="card__subtitle">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <p class="card__price">$52.00</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    </div>
 
     <section class="advantages">
         <div class="container">
