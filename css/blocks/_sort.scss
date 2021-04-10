@@ -1,13 +1,36 @@
 .sort {
   color: #6F6E6E;
   display: flex;
+  position: absolute;
 
+  &__checkbox {
+    margin-right: 9px;
+  }
   &__item {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 17px;
     margin-right: 28px;
+  }
+
+  &__label {
+    margin-bottom: 10px;
+  }
+  &__label--without-margin {
+    margin: 0;
+  }
+
+  &__row {
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    display: flex;
+    flex-direction: column;
+    padding: 9px 0 12px 9px;
+  }
+
+  &__size {
+    width: 79px;
   }
 
   &--margin-bottom {

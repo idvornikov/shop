@@ -61,11 +61,11 @@
     line-height: 19px;
     margin-bottom: 21px;
     text-align: right;
+
     &--colored {
       color: #F16D7F
     }
   }
-
 
   &__checkout-title {
     color: #4A4A4A;
@@ -84,6 +84,12 @@
 
   &__country {
     color: #B1B1B1;
+  }
+
+  &__cross {
+    position: absolute;
+    right: 22px;
+    top: 28px;
   }
 
   &__description {
@@ -118,12 +124,18 @@
 
   &__input {
     border: 1px solid #EAEAEA;
+    width: 44px;
   }
 
   &__item {
     background-color: #FFFFFF;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
     display: flex;
-    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    position: relative;
+  }
+
+  &__label {
+    margin-right: 25px;
   }
 
   &__purchases {
@@ -135,6 +147,8 @@
   }
 
   &__row {
+    display: flex;
+    align-items: center;
     margin-bottom: 6px;
   }
 
@@ -143,6 +157,10 @@
     margin-bottom: 0;
   }
 
+  &__span--space {
+    display: inline-block;
+    width: 24px;
+  }
   &__specification {
     color: #575757;
     font-size: 22px;

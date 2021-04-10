@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Registration</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
           rel="stylesheet">
@@ -40,68 +40,53 @@
     <div class="page-header">
         <div class="container">
             <div class="page-header__body">
-                <h1 class="page-header__header">SHOPPING CART</h1>
+                <h1 class="page-header__header">REGISTRATION</h1>
             </div>
         </div>
     </div>
 
-    <div class="cart">
+    <div class="registration">
         <div class="container">
-            <div class="cart__body">
-                <div class="cart__purchases">
-                    <div class="cart__item cart--margined-bottom">
-                        <img src="img/cart/1.png" alt="model">
-                        <div class="cart__description">
-                            <div class="cart__specification">
-                                <h3 class="cart__title">MANGO PEOPLE <br>T-SHIRT</h3>
-                                <p class="cart__row">Price: <span class="cart__colored">$300</span></p>
-                                <p class="cart__row">Color: Red</p>
-                                <p class="cart__row">Size: Xl</p>
-                                <div class="cart__row">
-                                    <label class="cart__label" for="quantity">Quantity:</label>
-                                    <input class="cart__input" id="quantity" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cart__cross"><img src="img/cart/cross.svg" alt="cross"></div>
+            <div class="registration__body">
+
+                <form class="registration__form">
+                    <h2 class="registration__title-16">Your Name</h2>
+                    <input class="registration__input registration__input--mb-20" id="first_name" type="text"
+                           placeholder="First Name" name="first_name">
+                    <input class="registration__input registration__input--mb-31" type="text"
+                           placeholder="Last Name">
+                    <div class="registration__gender">
+                        <input class="registration__radio" id="male" type="radio" name="gender" value="Male">
+                        <label class="registration__label registration__label--mr-20" for="male">Male</label>
+                        <input class="registration__radio" id="female" type="radio" name="gender" value="Female">
+                        <label class="registration__label" for="female">Female</label>
                     </div>
-                    <div class="cart__item cart--item-last">
-                        <img src="img/cart/2.png" alt="model">
-                        <div class="cart__description">
-                            <div class="cart__specification">
-                                <h3 class="cart__title">MANGO PEOPLE <br>T-SHIRT</h3>
-                                <p class="cart__row">Price: <span class="cart__colored">$300</span></p>
-                                <p class="cart__row">Color: Red</p>
-                                <p class="cart__row">Size: Xl</p>
-                                <label>Quantity:
-                                    <input class="cart__input" type="text">
-                                </label>
-                            </div>
-                            <div class="cart__cross"><img src="img/cart/cross.svg" alt="cross"></div>
-                        </div>
-                    </div>
-                    <div class="cart__buttons">
-                        <div class="cart__btn">CLEAR SHOPPING CART</div>
-                        <div class="cart__btn">CONTINUE SHOPPING</div>
-                    </div>
-                </div>
-                <div class="cart__right-side">
-                    <form action="#" class="cart__form">
-                        <h2 class="cart__form-title">SHIPPING ADDRESS</h2>
-                        <input class="cart__form-input cart__country" type="text" placeholder="Bangladesh">
-                        <input class="cart__form-input" type="text" placeholder="State">
-                        <input class="cart__form-input" type="text" placeholder="Postcode / Zip">
-                        <button class="cart__btn-quote">GET A QUOTE</button>
-                    </form>
-                    <div class="cart__checkout">
-                        <p class="cart__checkout-title">SUB TOTAL<span class="cart__span--space"></span>$900</p>
-                        <p class="cart__checkout-subtitle">GRAND TOTAL<span class="cart__span--space"></span>
-                            <span class="cart__checkout-subtitle--colored">$900</span>
-                        </p>
-                        <hr class="cart__checkout-hr">
-                        <a class="cart__btn-checkout" href="#">PROCEED TO CHECKOUT</a>
-                    </div>
-                </div>
+
+                    <h2 class="registration__title-16">Login details</h2>
+                    <input class="registration__input registration__input--mb-20" type="text" placeholder="Email">
+                    <input class="registration__input registration__input--mb-15" type="text" placeholder="Password">
+                    <p class="registration__password-requirements">Please use 8 or more characters, with at least 1
+                        number
+                        and a mixture of uppercase and lowercase letters</p>
+                    <button class="registration__btn" type="submit">
+                        <span class="registration__span">JOIN NOW</span>
+                        <img src="img/registration/arrow.svg" alt="arrow">
+                    </button>
+                </form>
+
+                <section class="registration__loyalty">
+                    <h2 class="registration__title-24">LOYALTY HAS ITS PERKS</h2>
+                    <p class="registration__subtitle">Get in on the loyalty program where you can earn points and unlock
+                        serious perks. Starting with these as soon as you join:</p>
+                    <ul class="registration__list">
+                        <li class="registration__item">15% off welcome offer</li>
+                        <li class="registration__item">Free shipping, returns and exchanges on all orders</li>
+                        <li class="registration__item">$10 off a purchase on your birthday</li>
+                        <li class="registration__item">Early access to products</li>
+                        <li class="registration__item registration__item--last">Exclusive offers & rewards</li>
+                    </ul>
+                </section>
+
             </div>
         </div>
     </div>

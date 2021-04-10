@@ -1,10 +1,9 @@
-@import "_var.scss";
-@import "_mixins.scss";
-@import "_main.scss";
+@import "var.scss";
+@import "mixins.scss";
+@import "main.scss";
 
 //blocks
 @import "blocks/advantages.scss";
-@import "blocks/arrivals.scss";
 @import "blocks/card.scss";
 @import "blocks/cart.scss";
 @import "blocks/categories";
@@ -13,9 +12,11 @@
 @import "blocks/filters.scss";
 @import "blocks/footer.scss";
 @import "blocks/header.scss";
+@import "blocks/page-header";
 @import "blocks/product-card.scss";
 @import "blocks/products.scss";
 @import "blocks/paginator.scss";
 @import "blocks/promo.scss";
+@import "blocks/registration.scss";
 @import "blocks/slider.scss";
 @import "blocks/sort.scss";
