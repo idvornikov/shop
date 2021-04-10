@@ -1,0 +1,131 @@
+.registration {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    margin: 103px 0 97px;
+  }
+
+  &__btn {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 17px;
+    padding: 16px 20px 16px 29px;
+    width: 167px;
+  }
+
+  &__form {
+    color: #222222;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    width: 360px;
+  }
+
+  &__gender {
+    align-items: center;
+    display: flex;
+    margin-bottom: 33px;
+  }
+
+  &__input {
+    border: 1px solid #A4A4A4;
+    color: #B1B1B1;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    padding: 13px 17px 15px;
+    text-align: left;
+  }
+
+  &__input--mb-15 {
+    margin-bottom: 15px;
+  }
+
+  &__input--mb-20 {
+    margin-bottom: 20px;
+  }
+
+  &__input--mb-31 {
+    margin-bottom: 31px;
+  }
+
+  &__input-radio {
+    margin-right: 10px;
+  }
+
+  &__item {
+    list-style: url("../img/registration/check.svg");
+    margin-bottom: 16px;
+    margin-left: 34px;
+
+    &--last {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    color: #000000;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 13px;
+  }
+
+  &__label--mr-20 {
+    margin-right: 20px;
+  }
+
+  &__loyalty {
+    color: #000000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    width: 652px;
+  }
+
+  &__password-requirements {
+    color: #B1B1B1;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    margin-bottom: 39px;
+  }
+
+  &__radio {
+    margin-right: 10px;
+  }
+
+  &__span {
+    margin-right: 20px;
+  }
+
+  &__title-16 {
+    color: #222222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+
+  &__title-24 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    margin-bottom: 22px;
+  }
+
+  &__subtitle {
+    margin-bottom: 21px;
+  }
+}
